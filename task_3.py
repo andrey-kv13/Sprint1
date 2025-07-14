@@ -8,9 +8,11 @@ world_champions = {
 
 world_champions[2022] = 'Аргентина'
 
-print(world_champions)
-
 country = 'Италия'
+
+print('Чемпионы мира по футболу в 21 веке:')
+for key, values in world_champions.items():
+    print(f'{key} - {values}')
 
 if country in world_champions.values():
     print(f'{country} становилась чемпионом мира по футболу в 21 веке!')
